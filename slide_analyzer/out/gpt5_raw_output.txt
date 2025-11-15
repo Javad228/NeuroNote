@@ -1,0 +1,52 @@
+{
+  "sentences": [
+    {
+      "text": "The slide title 'Mesos Architecture' at the top sets the context that we are looking at how Mesos coordinates clusters of machines.",
+      "detection_phrases": ["title text 'Mesos Architecture'"],
+      "x": 0.2,
+      "y": 0.08,
+      "width": 0.4,
+      "height": 0.12
+    },
+    {
+      "text": "In the center, the blue box 'Mesos master' is the control plane that receives resource requests from frameworks and makes placement decisions.",
+      "detection_phrases": ["blue box 'Mesos master'"],
+      "x": 0.4,
+      "y": 0.5,
+      "width": 0.22,
+      "height": 0.12
+    },
+    {
+      "text": "At the top, the white boxes 'Hadoop scheduler' and 'MPI scheduler' show that different frameworks plug into Mesos by sending scheduling requests to the master.",
+      "detection_phrases": ["white box 'Hadoop scheduler'", "white box 'MPI scheduler'"],
+      "x": 0.43,
+      "y": 0.33,
+      "width": 0.36,
+      "height": 0.12
+    },
+    {
+      "text": "The down arrows from the blue box 'Mesos master' to the three blue boxes labeled 'Messos slave' illustrate that the master offers resources to workers where tasks will run.",
+      "detection_phrases": ["down arrows from master", "blue boxes 'Messos slave'"],
+      "x": 0.5,
+      "y": 0.7,
+      "width": 0.6,
+      "height": 0.35
+    },
+    {
+      "text": "Inside each 'Messos slave' box, the white panels labeled 'executor' and 'task' indicate that a framework launches its executor on the worker, which then runs one or more tasks.",
+      "detection_phrases": ["blue boxes 'Messos slave'", "white panels 'executor task'"],
+      "x": 0.5,
+      "y": 0.82,
+      "width": 0.62,
+      "height": 0.28
+    },
+    {
+      "text": "On the right, the green circles 'ZooKeeper quorum' connected by dashed lines to the blue boxes 'Standby master' show high availability: ZooKeeper elects a leader among masters and promotes a standby if the current master fails.",
+      "detection_phrases": ["green circles 'ZooKeeper quorum'", "blue boxes 'Standby master'"],
+      "x": 0.73,
+      "y": 0.4,
+      "width": 0.36,
+      "height": 0.28
+    }
+  ]
+}

@@ -1,18 +1,19 @@
 # Core dependencies
 torch>=2.0.0
 torchvision>=0.15.0
-transformers>=4.44.2
+transformers>=4.37.0
 timm>=0.9.0
-accelerate>=0.20.0
 
 # Image processing
 Pillow>=10.0.0
 opencv-python-headless>=4.8.0
 numpy>=1.24.0
-matplotlib>=3.7.0
 
 # SAM (Segment Anything Model)
 segment-anything @ git+https://github.com/facebookresearch/segment-anything.git
 
 # OpenAI API
 openai>=1.0.0
+
+# Florence-2 specific (if needed for better support)
+einops>=0.7.0
